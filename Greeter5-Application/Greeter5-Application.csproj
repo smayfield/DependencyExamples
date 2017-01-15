@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9542053F-CE94-4031-AE9D-4E18E5359D6C}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{C23443D7-DA69-4B57-AD00-AEBE5E12110D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DependencyExamples</RootNamespace>
-    <AssemblyName>DependencyExamples</AssemblyName>
+    <RootNamespace>Greeter5_Application</RootNamespace>
+    <AssemblyName>Greeter5-Application</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Greeter5.cs" />
-    <Compile Include="Greeter4.cs" />
-    <Compile Include="Greeter3.cs" />
-    <Compile Include="Greeter2.cs" />
-    <Compile Include="Greeter1.cs" />
-    <Compile Include="HolidayMessageWriter2.cs" />
-    <Compile Include="HolidayMessageWriter.cs" />
-    <Compile Include="IMessageWriter.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DependencyExamples\DependencyExamples.csproj">
+      <Project>{9542053f-ce94-4031-ae9d-4e18e5359d6c}</Project>
+      <Name>DependencyExamples</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

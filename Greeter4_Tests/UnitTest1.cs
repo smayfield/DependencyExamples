@@ -4,6 +4,10 @@ using DependencyExamples;
 
 namespace Greeter1_Tests
 {
+    // NOTE: Expect MOST of these classes to fail because we
+    // are still passing in a class that has dependencies on the 
+    // current date.
+
     [TestClass]
     public class UnitTest1
     {
