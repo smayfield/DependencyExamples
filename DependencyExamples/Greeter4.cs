@@ -8,7 +8,6 @@ namespace DependencyExamples
 {
     public class Greeter4
     {
-        private int _currentHour;
         private HolidayMessageWriter _msgWriter;
 
         public Greeter4(HolidayMessageWriter msgWriter)
