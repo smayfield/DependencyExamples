@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greeter3-Application", "Gre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greeter4-Application", "Greeter4-Application\Greeter4-Application.csproj", "{4990F55B-83CE-4082-AD40-108E6EE78665}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greeter1_Tests", "Greeter1_Tests\Greeter1_Tests.csproj", "{E8BA61BE-A6DB-4756-9BDC-3ED62AAD134B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greeter2_Tests", "Greeter2_Tests\Greeter2_Tests.csproj", "{A7F35A54-7DF0-45E6-B3F3-866B6276B227}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{4990F55B-83CE-4082-AD40-108E6EE78665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4990F55B-83CE-4082-AD40-108E6EE78665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4990F55B-83CE-4082-AD40-108E6EE78665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BA61BE-A6DB-4756-9BDC-3ED62AAD134B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BA61BE-A6DB-4756-9BDC-3ED62AAD134B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BA61BE-A6DB-4756-9BDC-3ED62AAD134B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BA61BE-A6DB-4756-9BDC-3ED62AAD134B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F35A54-7DF0-45E6-B3F3-866B6276B227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F35A54-7DF0-45E6-B3F3-866B6276B227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F35A54-7DF0-45E6-B3F3-866B6276B227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F35A54-7DF0-45E6-B3F3-866B6276B227}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
