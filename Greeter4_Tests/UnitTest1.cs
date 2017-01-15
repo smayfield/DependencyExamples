@@ -10,8 +10,8 @@ namespace Greeter1_Tests
         [TestMethod]
         public void Greet_ReturnsMorningMessage_WhenTimeIsBeforeNoon()
         {
-            var mw = new MessageWriter();
-            var g = new Greeter4(10, mw); // 10am
+            var mw = new HolidayMessageWriter();
+            var g = new Greeter4(mw);
             var msg = g.Greet();
             Assert.AreEqual("Good Morning.", msg);
         }
@@ -19,8 +19,8 @@ namespace Greeter1_Tests
         [TestMethod]
         public void Greet_ReturnsAfternoonMessage_WhenTimeBetweenNoonAndSix()
         {
-            var mw = new MessageWriter();
-            var g = new Greeter4(14, mw); // 2pm
+            var mw = new HolidayMessageWriter();
+            var g = new Greeter4(mw);
             var msg = g.Greet();
             Assert.AreEqual("Good Afternoon.", msg);
         }
@@ -28,8 +28,17 @@ namespace Greeter1_Tests
         [TestMethod]
         public void Greet_ReturnsMorningMessage_WhenTimeAfterSix()
         {
-            var mw = new MessageWriter();
-            var g = new Greeter4(20, mw); // 8pm
+            var mw = new HolidayMessageWriter();
+            var g = new Greeter4(mw);
+            var msg = g.Greet();
+            Assert.AreEqual("Good Evening.", msg);
+        }
+
+        [TestMethod]
+        public void Greet_ReturnsNewYearsMessage_WhenFirstOfYear()
+        {
+            var mw = new HolidayMessageWriter();
+            var g = new Greeter4(mw);
             var msg = g.Greet();
             Assert.AreEqual("Good Evening.", msg);
         }

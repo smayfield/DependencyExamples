@@ -9,30 +9,16 @@ namespace DependencyExamples
     public class Greeter4
     {
         private int _currentHour;
-        private MessageWriter _msgWriter;
+        private HolidayMessageWriter _msgWriter;
 
-        public Greeter4(int currentHour, MessageWriter msgWriter)
+        public Greeter4(HolidayMessageWriter msgWriter)
         {
-            _currentHour = currentHour;
             _msgWriter = msgWriter;
         }
 
         public string Greet()
         {
-            string response = "";
-            if (_currentHour < 12)
-            {
-                response = _msgWriter.MorningMessage();
-            }
-            else if (_currentHour < 18)
-            {
-                response = _msgWriter.AfternoonMessage();
-            }
-            else
-            {
-                response = _msgWriter.EveningMessage();
-            }
-            return response;
+            return _msgWriter.GetMessage();
         }
     }
 }

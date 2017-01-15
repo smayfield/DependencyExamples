@@ -11,8 +11,8 @@ namespace Greeter4_Application
     {
         static void Main(string[] args)
         {
-            var mw = new MessageWriter();
-            var g = new Greeter4(DateTime.Now.Hour, mw);
+            var mw = new HolidayMessageWriter();
+            var g = new Greeter4(mw);
             Console.WriteLine(g.Greet());
 
             Console.WriteLine("Press any key...");
